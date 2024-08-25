@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: dev
+  main:
+    banner-mode: off
+  cloud:
+    config:
+      enabled: true
+  application:
+    name: testbed-gateway
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: refresh

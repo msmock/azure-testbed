@@ -1,0 +1,27 @@
+server.port: 8888
+spring:
+  profiles:
+    active: dev
+  main:
+    banner-mode: off
+
+  # git repo configuration
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/msmock/azure-testbed-config
+          default-label: main
+          skipSslValidation: true
+        # Use the File System Backend to avoid git pulling. Enable "native" profile in the Config Server.
+        native:
+          searchLocations: file:////Users/martinsmock/Documents/GitHub/azure-testbed-config
+
+# slf4j configuration
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    org.springframework.security: INFO
+
+

@@ -1,0 +1,66 @@
+{
+ "results": [
+  {
+   "gender": "female",
+   "name": {
+    "title": "Madame",
+    "first": "Eline",
+    "last": "Renaud"
+   },
+   "location": {
+    "street": {
+     "number": 8759,
+     "name": "Rue Abel-Gance"
+    },
+    "city": "Beggingen",
+    "state": "Luzern",
+    "country": "Switzerland",
+    "postcode": 3073,
+    "coordinates": {
+     "latitude": "-28.1038",
+     "longitude": "140.4286"
+    },
+    "timezone": {
+     "offset": "-12:00",
+     "description": "Eniwetok, Kwajalein"
+    }
+   },
+   "email": "eline.renaud@example.com",
+   "login": {
+    "uuid": "4de0e517-ea8a-4439-ad1f-eaa2ab34389c",
+    "username": "yellowwolf678",
+    "password": "atlas",
+    "salt": "OHOsnJ31",
+    "md5": "c231fa5c75a6ea3eefcd7fea2c19c62f",
+    "sha1": "d1f5a8589057d2f79f4f6aaff4934f1db66b3d22",
+    "sha256": "7a069b13a0afd6f675648ba2885af1ab33679a8eafbc948366422fb0e074579d"
+   },
+   "dob": {
+    "date": "1980-03-03T08:42:52.903Z",
+    "age": 44
+   },
+   "registered": {
+    "date": "2005-04-21T22:55:09.641Z",
+    "age": 19
+   },
+   "phone": "076 256 83 99",
+   "cell": "076 842 84 53",
+   "id": {
+    "name": "AVS",
+    "value": "756.1639.3342.74"
+   },
+   "picture": {
+    "large": "https:\/\/randomuser.me\/api\/portraits\/women\/62.jpg",
+    "medium": "https:\/\/randomuser.me\/api\/portraits\/med\/women\/62.jpg",
+    "thumbnail": "https:\/\/randomuser.me\/api\/portraits\/thumb\/women\/62.jpg"
+   },
+   "nat": "CH"
+  }
+ ],
+ "info": {
+  "seed": "76878f6768ba1989",
+  "results": 1,
+  "page": 1,
+  "version": "1.4"
+ }
+}

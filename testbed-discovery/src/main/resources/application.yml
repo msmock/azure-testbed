@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active: dev
+  main:
+    banner-mode: off
+  config:
+    import: configserver:${CONFIG_SERVER_URL:http://localhost:8888/}
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+  application:
+    name: testbed-discovery
+
+eureka:
+  server:
+    enableSelfPreservation: true
+    renewalPercentThreshold: 0.85
+
+logging:
+  level:
+    root: info
+    org.springframework.web: info
+    org.springframework.security: info

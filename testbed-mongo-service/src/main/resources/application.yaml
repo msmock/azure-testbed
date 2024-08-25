@@ -1,0 +1,32 @@
+spring:
+  profiles:
+    active: dev
+  main:
+    banner-mode: off
+  cloud:
+    config:
+      enabled: true
+  config:
+    import: configserver:${CONFIG_SERVER_URL:http://localhost:8888/}
+  application:
+    name: testbed-mongo-service
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+      include: refresh
+
+logging:
+  level:
+    root: info
+    org.springframework.web: info
+    org.springframework.cloud.netflix: error
+    com.netflix.discovery: error
+    ch.qos.logback: error
+

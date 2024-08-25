@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: dev
+  main:
+    banner-mode: off
+  cloud:
+    config:
+      enabled: true
+  config:
+    import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888/}
+  application:
+    name: testbed-service
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+      include: refresh
