@@ -160,7 +160,7 @@ resource "azurerm_user_assigned_identity" "poc-app-service-identity" {
 
 # output the user assigned identity to be used in CLI deployment
 output "assigned-id" {
-  value      = azurerm_user_assigned_identity.poc-app-service-identity
+  value       = azurerm_user_assigned_identity.poc-app-service-identity
   description = "the user assigned identity to be used for the app instance in CLI deployment."
 
   depends_on = [azurerm_user_assigned_identity.poc-app-service-identity]
